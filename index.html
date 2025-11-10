@@ -1,29 +1,48 @@
-<!DOCTYPE html>
+=<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>🔥 Promo Spesial Shopee Hari Ini!</title>
-  <meta name="description" content="Cek promo spesial Shopee hari ini, hanya berlaku terbatas. Klik untuk melihat detail produk dan diskon menarik!" />
+  <title>Promo Spesial Shopee 🎉</title>
+  <meta name="description" content="Cek promo spesial di Shopee. Klik untuk lihat detail & diskon!" />
 
-  <!-- Open Graph (Facebook, WhatsApp, LINE) -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://s.shopee.co.id/12RqcU3U1" />
-  <meta property="og:title" content="🔥 Promo Spesial Shopee Hari Ini!" />
-  <meta property="og:description" content="Cek promo spesial Shopee hari ini, hanya berlaku terbatas. Klik untuk melihat detail produk dan diskon menarik!" />
+  <!-- PENTING: og:url = URL NETLIFY-MU, bukan Shopee -->
+  <meta property="og:url" content="https://NAMA-SITE.netlify.app/" />
+  <meta property="og:title" content="Promo Spesial Shopee 🎉" />
+  <meta property="og:description" content="Diskon terbatas. Klik untuk cek produknya!" />
   <meta property="og:image" content="https://liputan.online/uploads/og-video-aslinya-ga-gini-j-hat-bgt-yg-edit-d8c658.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Promo Netlify" />
 
-  <!-- Twitter Card -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="🔥 Promo Spesial Shopee Hari Ini!" />
-  <meta name="twitter:description" content="Cek promo spesial Shopee hari ini, hanya berlaku terbatas. Klik untuk melihat detail produk dan diskon menarik!" />
+  <meta name="twitter:title" content="Promo Spesial Shopee 🎉" />
+  <meta name="twitter:description" content="Diskon terbatas. Klik untuk cek produknya!" />
   <meta name="twitter:image" content="https://liputan.online/uploads/og-video-aslinya-ga-gini-j-hat-bgt-yg-edit-d8c658.jpg" />
 
-  <!-- Redirect otomatis -->
-  <meta http-equiv="refresh" content="0; url=https://s.shopee.co.id/12RqcU3U1" />
+  <!-- JANGAN pakai meta refresh 0s. Biarkan 3s via JS agar crawler FB sempat scrape OG -->
+  <script>
+    // Redirect setelah 3 detik
+    setTimeout(function () {
+      window.location.replace("https://s.shopee.co.id/12RqcU3U1");
+    }, 3000);
+  </script>
+  <style>
+    body {font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; padding: 24px;}
+    .box {max-width: 560px; margin: 0 auto; text-align:center}
+  </style>
 </head>
 <body>
-  <p>Mengarahkan ke Shopee... Jika tidak otomatis, klik <a href="https://s.shopee.co.id/12RqcU3U1">di sini</a>.</p>
+  <div class="box">
+    <p>Mengarahkan ke Shopee…</p>
+    <p><a href="https://s.shopee.co.id/12RqcU3U1">Klik di sini</a> jika tidak otomatis.</p>
+  </div>
+  <noscript>
+    <meta http-equiv="refresh" content="3; url=https://s.shopee.co.id/12RqcU3U1">
+  </noscript>
 </body>
 </html>
