@@ -1,48 +1,73 @@
-=<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Promo Spesial Shopee 🎉</title>
-  <meta name="description" content="Cek promo spesial di Shopee. Klik untuk lihat detail & diskon!" />
+  <title>🔥 Promo Spesial Shopee Hari Ini!</title>
+  <meta name="description" content="Diskon besar-besaran cuma hari ini! Klik untuk lihat produk pilihan di Shopee sekarang juga." />
 
-  <!-- Open Graph -->
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <!-- PENTING: og:url = URL NETLIFY-MU, bukan Shopee -->
-  <meta property="og:url" content="https://NAMA-SITE.netlify.app/" />
-  <meta property="og:title" content="Promo Spesial Shopee 🎉" />
-  <meta property="og:description" content="Diskon terbatas. Klik untuk cek produknya!" />
+  <!-- PENTING: gunakan URL halaman Netlify kamu di sini -->
+  <meta property="og:url" content="https://ayobacaa.netlify.app/" />
+  <meta property="og:title" content="🔥 Promo Spesial Shopee Hari Ini!" />
+  <meta property="og:description" content="Diskon besar-besaran cuma hari ini! Klik untuk lihat produk pilihan di Shopee sekarang juga." />
   <meta property="og:image" content="https://liputan.online/uploads/og-video-aslinya-ga-gini-j-hat-bgt-yg-edit-d8c658.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:site_name" content="Promo Netlify" />
+  <meta property="og:site_name" content="Promo Shopee" />
+  <!-- Optional untuk hilangkan warning merah -->
+  <meta property="fb:app_id" content="1234567890" />
 
-  <!-- Twitter -->
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Promo Spesial Shopee 🎉" />
-  <meta name="twitter:description" content="Diskon terbatas. Klik untuk cek produknya!" />
+  <meta name="twitter:title" content="🔥 Promo Spesial Shopee Hari Ini!" />
+  <meta name="twitter:description" content="Diskon besar-besaran cuma hari ini! Klik untuk lihat produk pilihan di Shopee sekarang juga." />
   <meta name="twitter:image" content="https://liputan.online/uploads/og-video-aslinya-ga-gini-j-hat-bgt-yg-edit-d8c658.jpg" />
 
-  <!-- JANGAN pakai meta refresh 0s. Biarkan 3s via JS agar crawler FB sempat scrape OG -->
+  <!-- Delay 5 detik agar OG sempat dibaca -->
   <script>
-    // Redirect setelah 3 detik
-    setTimeout(function () {
-      window.location.replace("https://s.shopee.co.id/12RqcU3U1");
-    }, 3000);
+    setTimeout(function() {
+      window.location.href = "https://s.shopee.co.id/12RqcU3U1";
+    }, 5000);
   </script>
+
   <style>
-    body {font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; padding: 24px;}
-    .box {max-width: 560px; margin: 0 auto; text-align:center}
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f8f8f8;
+      text-align: center;
+      color: #333;
+      padding: 20px;
+    }
+    a {
+      color: #ff5722;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
+
 <body>
-  <div class="box">
-    <p>Mengarahkan ke Shopee…</p>
-    <p><a href="https://s.shopee.co.id/12RqcU3U1">Klik di sini</a> jika tidak otomatis.</p>
-  </div>
+  <h2>🔥 Sedang Mengarahkan ke Promo Shopee...</h2>
+  <p>Jika tidak otomatis, klik di sini 👉 
+    <a href="https://s.shopee.co.id/12RqcU3U1" target="_blank" rel="noopener noreferrer">
+      Buka Shopee Sekarang
+    </a>
+  </p>
+
   <noscript>
-    <meta http-equiv="refresh" content="3; url=https://s.shopee.co.id/12RqcU3U1">
+    <meta http-equiv="refresh" content="5; url=https://s.shopee.co.id/12RqcU3U1">
+    <p><a href="https://s.shopee.co.id/12RqcU3U1">Klik di sini</a> jika tidak dialihkan otomatis.</p>
   </noscript>
 </body>
 </html>
